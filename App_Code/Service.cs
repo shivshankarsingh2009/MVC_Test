@@ -11,7 +11,8 @@ public class Service : IService
 {
 	public string GetData(int value)
 	{
-		return string.Format("You entered this value: {0}", value);
+        var stringValue= string.Format("You entered this value: {0}", value);
+        return stringValue;
 	}
 
 	public CompositeType GetDataUsingDataContract(CompositeType composite)
